@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(56, 49, 49);
+    display: flex  ;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 6vh;
+}
+
+header img{
+    width: 70px;
+    height: 70px;
+}
+
+header .menu-header nav{
+    display: flex;
+}
+
+header .menu-header a{
+    color: white;
+    margin-left: 30px;
+}
+
+header .menu-cadastre{
+    display: flex;
+    align-items: center;
+}
+
+header .menu-cadastre img{
+    width: 20px;
+    height: 20px;
+}
+
+header .menu-cadastre a{
+    color: white;
+    margin-left: 5px;
+}
+
+.bloco-01{
+    background-image: url(img/back-3.jpg);
+    padding: 35vh;
+    
+    
+}
+
