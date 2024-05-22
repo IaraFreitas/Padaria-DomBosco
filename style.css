@@ -59,38 +59,33 @@ header img{
 #btn-header > button{
     padding: 8px;
     background-color: transparent; /*aqui deixamos o fundo do botão transparente, ou seja, sem o fundo Branco que estava no primeiro plano*/
-    border: none;  
+    border: none;  /*NONE é utilizado para tirar algo, neste caso a borda*/
 }
 
-
-header .menu-header nav{
-    display: flex;
-}
-
-header .menu-header a{
-    color: white;
-    margin-left: 30px;
-}
-
-header .menu-cadastre{
+#btn-header > button > a{
     display: flex;
     align-items: center;
 }
 
-header .menu-cadastre img{
-    width: 20px;
-    height: 20px;
+#btn-header > button > a > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
 }
 
-header .menu-cadastre a{
+#btn-header > button > a{
     color: white;
-    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 400; /*define a espessura da fonte*/
 }
 
-.bloco-01{
-    background-image: url(img/back-5.jpg);
-    padding: 35vh;
-    background-repeat: no-repeat;
-    
+.img-padaria{
+    padding: 20%; /*cuida do preenchimento*/
+    background-image: url(img/paperWall-1.jpg);
+    background-position: center;
 }
 
+
+.efeito-img-topo{
+    visibility: hidden;
+}
