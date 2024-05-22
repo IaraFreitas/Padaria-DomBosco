@@ -34,10 +34,34 @@ header img{
 
 #list-menu{  /*nossa lista não ordenada, aqui mudaremos diretamente nossa lista*/
     display: flex;
-    margin-right: 1rem;
-    
-
+    margin-right: 1rem; /*1 REM equivale a 16px, ou seja, podemos utiliza-lo para facilitar o uso do px*/
 }
+
+.item-menu-header{  
+    margin-right: 25px;
+}
+
+.item-menu-header > a:hover{
+    color:yellow;
+    transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
+}
+
+.item-menu-header > a{
+    color: white;
+    text-decoration: none;  /*responsável por tirar o sublinhado inferior que estava visível*/
+    font-size: 12px;
+}
+
+#btn-header{
+    display: flex;
+}
+
+#btn-header > button{
+    padding: 8px;
+    background-color: transparent; /*aqui deixamos o fundo do botão transparente, ou seja, sem o fundo Branco que estava no primeiro plano*/
+    border: none;  
+}
+
 
 header .menu-header nav{
     display: flex;
@@ -64,9 +88,9 @@ header .menu-cadastre a{
 }
 
 .bloco-01{
-    background-image: url(img/back-4.jpg);
+    background-image: url(img/back-5.jpg);
     padding: 35vh;
-    
+    background-repeat: no-repeat;
     
 }
 
