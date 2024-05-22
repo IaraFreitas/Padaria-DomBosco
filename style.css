@@ -13,11 +13,30 @@ header{
     align-items: center;
     color: white;
     padding: 6vh;
+    overflow: hidden; /*ajusta o texto numa barra de rolagem*/
+}
+
+header h1{
+    color: white;
+    font-size: 45px;
 }
 
 header img{
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 170px;
+}
+
+/*NAV*/
+#menu-header{  /*nosso menu de navegação*/
+    display: flex;
+    align-items: center; /*alinha os itens no centro*/
+}
+
+#list-menu{  /*nossa lista não ordenada, aqui mudaremos diretamente nossa lista*/
+    display: flex;
+    margin-right: 1rem;
+    
+
 }
 
 header .menu-header nav{
@@ -45,7 +64,7 @@ header .menu-cadastre a{
 }
 
 .bloco-01{
-    background-image: url(img/back-3.jpg);
+    background-image: url(img/back-4.jpg);
     padding: 35vh;
     
     
