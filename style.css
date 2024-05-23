@@ -67,28 +67,33 @@ header img{
     align-items: center;
 }
 
-#btn-header > button > a > img{
+#btn-header > button > a > img{  /*aqui estamos mexendo no ICON do botão*/
     width: 30px;
     height: 30px;
     margin-right: 2px;
 }
 
-#btn-header > button > a{
+#btn-header > button > a{ /*estamos chamando aqui nossa TAG de Link para alteração (NOVAMENTE)*/
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*responsável por tirar o sublinhado que estava visível*/
     font-weight: 400; /*define a espessura da fonte*/
 }
 
-.img-padaria{
+.img-padaria{ /*aqui chamamos o ID que criamos no html*/
     padding: 20%; /*cuida do preenchimento*/
-    background-image: url(img/paperWall-1.jpg);
-    background-position: center;
+    background-image: url(img/paperWall-1.jpg); /*usada para inserir imagens de fundo*/
+    background-position: center; /*aqui posicionamos nossa imagem para o centro*/
 }
-
 
 .efeito-img-topo{
     visibility: hidden;
 }
+
+
+/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
+Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
+No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
+
 
 .bloco-01{
     background-image: url(img/paperWall-1.jpg);
