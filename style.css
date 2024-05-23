@@ -89,3 +89,7 @@ header img{
 .efeito-img-topo{
     visibility: hidden;
 }
+
+.bloco-01{
+    background-image: url(img/back-1.jpg);
+}
