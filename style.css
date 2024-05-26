@@ -96,7 +96,11 @@ No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
 
 
 .bloco-01{
-    background-image: url(img/paperWall-1.jpg);
+    height: 70vh;
+    width: 100vw;
+    background-image: url(img/01-1920x1080.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
