@@ -6,6 +6,19 @@
     text-decoration: none;
 }
 
+body{
+    background-color: blue;
+    background-image: linear-gradient(180deg, #726c5b, #795a2d);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 header{
     background-color: rgb(56, 49, 49);
     display: flex  ;
@@ -17,7 +30,6 @@ header{
     position: sticky;
     margin: 0;
     top: 0;
-    
 }
 
 header h1{
@@ -84,15 +96,17 @@ header img{
     font-weight: 400; /*define a espessura da fonte*/
 }
 
+#btn-header > button > a > p:hover{
+    color:yellow;
+    transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
+}
+
 .img-padaria{ /*aqui chamamos o ID que criamos no html*/
     padding: 2%; /*cuida do preenchimento*/
     background-image: url(img/paperWall-1.jpg); /*usada para inserir imagens de fundo*/
     background-position: center; /*aqui posicionamos nossa imagem para o centro*/
 }
 
-.efeito-img-topo{
-    visibility: hidden;
-}
 
 
 /* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
@@ -100,18 +114,19 @@ Os identificadores são usados ​​apenas quando um elemento na página precis
 No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
 
 
+/*consta uma imagem de fundo da padaria*/
 .bloco-01{
     height: 100vh;
     width: 99vw;
     background-image: url(img/01-1920x1080.png);
     background-repeat: no-repeat;
-    
-
 }
 
+
+/*no Bloco 2 consta o depoimento dos clientes*/
 .bloco-02{
     
-    background-image: url(img/back-clientes-5.png);
+    background-image: url(img/back-clientes-4.png);
     /* height: 100vh;
     width: 99vw;
     background-repeat: no-repeat;
@@ -125,6 +140,20 @@ No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
     height: 9vh;
 }
 
+
+
+
+/*No Bloco 3 consta os principais produtos*/
+#Bloco-03 { 
+    background: linear-gradient(180deg, #d49664 8.33%, rgba(244, 200, 175, 0) 100%); 
+    padding: 30px; 
+}
+
+
+#Bloco-03 .produtos img{
+    width: 200px;
+    height: 180px;
+}
 
 
 
