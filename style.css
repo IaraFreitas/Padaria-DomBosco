@@ -1,3 +1,8 @@
+/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
+Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
+No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
+
+/*configurando os tamanhos globais*/
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +11,7 @@
     text-decoration: none;
 }
 
+/*configurando o body da HOME*/
 body{
     background-color: blue;
     background-image: linear-gradient(180deg, #726c5b, #795a2d);
@@ -19,17 +25,15 @@ body{
     align-items: center;
 }
 
+/*configurando o HEADER da página*/
 header{
     background-color: rgb(56, 49, 49);
-    display: flex  ;
+    display: flex ;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: 2vh;
     overflow: hidden; /*ajusta o texto numa barra de rolagem*/
-    position: sticky;
-    margin: 0;
-    top: 0;
 }
 
 header h1{
@@ -37,63 +41,59 @@ header h1{
     font-size: 45px;
 }
 
-header img{
+header img{  /*aqui definimos o tamanho da img no header*/
     width: 200px;
     height: 170px;
 }
 
-/*NAV*/
-#menu-header{  /*nosso menu de navegação*/
+#menu-header{  /*NAV > aqui chamamos o ID do menu de navegação para deixar os itens lado a lado*/
     display: flex;
     align-items: center; /*alinha os itens no centro*/
 }
 
-#list-menu{  /*nossa lista não ordenada, aqui mudaremos diretamente nossa lista*/
+#menu-list{  /*UL > aqui deixamos os textos da lista lado a lado*/
     display: flex;
     margin-right: 1rem; /*1 REM equivale a 16px, ou seja, podemos utiliza-lo para facilitar o uso do px*/
 }
 
-.item-menu-header{  
+.item-menu-list{  
     margin-right: 1rem;
 }
 
-.item-menu-header > a:hover{
-    color:yellow;
-    transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
+.item-menu-list a{
+    color: white;
+    text-decoration: none;  /*tira o sublinhado que vem automático em textos com ancora*/
+    font-size: 16px;
 }
 
-.item-menu-header > a{
-    color: white;
-    text-decoration: none;  /*responsável por tirar o sublinhado inferior que estava visível*/
-    font-size: 16px;
+.item-menu-list a:hover{
+    color:yellow;
+    transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
 }
 
 #btn-header{
     display: flex;
 }
 
-#btn-header > button{
-    padding: 15px;
+#btn-header button{
+    padding: 18px;
     background-color: transparent; /*aqui deixamos o fundo do botão transparente, ou seja, sem o fundo Branco que estava no primeiro plano*/
     border: none;  /*NONE é utilizado para tirar algo, neste caso a borda*/
 }
 
-#btn-header > button > a{
+#btn-header button a{ /*aqui deixamos o ícone do botão e o texto lado a lado*/
     display: flex;
     align-items: center;
     font-size: 16px;
-}
-
-#btn-header > button > a > img{  /*aqui estamos mexendo no ICON do botão*/
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-}
-
-#btn-header > button > a{ /*estamos chamando aqui nossa TAG de Link para alteração (NOVAMENTE)*/
     color: white;
     text-decoration: none; /*responsável por tirar o sublinhado que estava visível*/
     font-weight: 400; /*define a espessura da fonte*/
+}
+
+#btn-header button a img{  /*aqui estamos ajustando o ICON do botão*/
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
 #btn-header > button > a > p:hover{
@@ -101,49 +101,59 @@ header img{
     transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
 }
 
-.img-padaria{ /*aqui chamamos o ID que criamos no html*/
-    padding: 2%; /*cuida do preenchimento*/
-    background-image: url(img/paperWall-1.jpg); /*usada para inserir imagens de fundo*/
-    background-position: center; /*aqui posicionamos nossa imagem para o centro*/
-}
-
-
-
-/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
-Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
-No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
-
-
-/*consta uma imagem de fundo da padaria*/
+/*configurando o bloco-01, que é após o header, onde terá apenas uma img de fundo, como uma vitrine*/
 .bloco-01{
-    height: 100vh;
-    width: 99vw;
-    background-image: url(img/01-1920x1080.png);
+    background-image: url(img/img-bloco-01-b.png); /*inserido img de fundo*/
+    padding: 16%; /*usado para definir o tamanho da página numa tela de 1920x1080*/
     background-repeat: no-repeat;
+    background-position: center; /*centraliza a img, independente do tamanho*/
+    background-size: auto;
 }
 
-
-/*no Bloco 2 consta o depoimento dos clientes*/
+/*configurando o bloco-02 com o depoimento dos clientes*/
 .bloco-02{
-    
-    background-image: url(img/back-clientes-4.png);
-    /* height: 100vh;
-    width: 99vw;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    margin-left: 4rem;
-    margin-top: 50px; */
-
-    padding: 17rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 9vh;
+    padding: 6%;
+    background-color: white;
 }
 
+.bloco-02 h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+.bloco-02 .line{
+    margin: 0 auto;
+    width: 30%;
+    box-shadow: 0px 0px 1px black;
+}
 
+.bloco-02 #clientes-list{
+    display: flex;
+}
 
-/*No Bloco 3 consta os principais produtos*/
+.bloco-02 .clientes-item img{
+    width: 12rem;
+    height: 12rem;
+    margin-top: 40px;
+    align-items: center;
+    padding: 0 100px;
+}
+   
+.bloco-02 .clientes-item{
+    padding: 2% auto;
+}
+
+.bloco-02 .clientes-item h3{
+    text-align: center;
+    margin-left: 20px
+}    
+
+.bloco-02 .clientes-item p{
+    text-align: center;
+    margin-left: 20px
+} 
+
+/*configurando o bloco-03 com os principais produtos*/
 #Bloco-03 { 
     background: linear-gradient(180deg, #d49664 8.33%, rgba(244, 200, 175, 0) 100%); 
     padding: 30px; 
