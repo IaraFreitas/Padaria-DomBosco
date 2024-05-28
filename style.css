@@ -154,19 +154,62 @@ header img{  /*aqui definimos o tamanho da img no header*/
 } 
 
 /*configurando o bloco-03 com os principais produtos*/
-#Bloco-03 { 
+#bloco-03 { 
     background: linear-gradient(180deg, #d49664 8.33%, rgba(244, 200, 175, 0) 100%); 
     padding: 30px; 
 }
 
-
-#Bloco-03 .produtos img{
-    width: 200px;
-    height: 180px;
+#bloco-03 .produtos{
+   display: flex;
+   justify-content: space-evenly; /*alinha os itens igualmente dentro da página*/
+   margin-top: 3em;
+   align-items: center;
 }
 
+#bloco-03 .produtos .img-produto{
+    width: 250px;
+    height: 200px;
+    box-shadow: 3px 3px 2px black;
+    margin-top: 20px;
+ }
 
+ #bloco-03 h2{
+    text-align: center;
+    margin-top: 30px;
+ }
+ 
+ #bloco-03 .produtos h5{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+ }
 
+ #bloco-03 .line{
+    margin: 0 auto;
+    width: 30%;
+    box-shadow: 0px 0px 1px black;
+    margin-top: 10px;
+}
+
+/*configuração do bloco-04 onde falamos SOBRE NÓS*/
+#bloco-04{
+    padding: 7%;
+    background-image: url(img/01-1920x1080.png);
+    background-attachment: fixed;
+}
+
+#bloco-04 h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#bloco-04 p{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 25px;
+}
 
 footer{
     background-color: rgb(56, 49, 49);
