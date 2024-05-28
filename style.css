@@ -194,7 +194,7 @@ header img{  /*aqui definimos o tamanho da img no header*/
 /*configuração do bloco-04 onde falamos SOBRE NÓS*/
 #bloco-04{
     padding: 7%;
-    background-image: url(img/01-1920x1080.png);
+    background-image: url(img/02-1920x1080.png);
     background-attachment: fixed;
 }
 
@@ -211,11 +211,52 @@ header img{  /*aqui definimos o tamanho da img no header*/
     margin-bottom: 25px;
 }
 
-footer{
+/*configuração do footer*/
+#footer-contatos{
     background-color: rgb(56, 49, 49);
     text-align: center;
     color: white;
     padding: 4vh;
     font-size: 15px;
     
+}
+
+#footer-contatos .footer-canais-itens img{
+    width: 50px;
+    height: 50px;
+}
+
+#footer-contatos .footer-canais-itens{
+    display: flex;
+    align-items: center;
+}
+
+#footer-contatos .footer-canais-itens p{
+    align-items: center;
+    
+}
+
+#footer-contatos h2{
+    text-align: center;
+
+}
+
+#footer-contatos hr{
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 6px white;
+}
+
+#footer-contatos .footer-canais{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+#footer-contatos .footer-canais .two{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
