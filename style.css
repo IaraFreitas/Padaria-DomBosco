@@ -218,27 +218,26 @@ header img{  /*aqui definimos o tamanho da img no header*/
     color: white;
     padding: 4vh;
     font-size: 15px;
-    
 }
 
 #footer-contatos .footer-canais-itens img{
     width: 50px;
     height: 50px;
+    /*lembrar como trocar a cor do icon*/
 }
 
 #footer-contatos .footer-canais-itens{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 #footer-contatos .footer-canais-itens p{
     align-items: center;
-    
 }
 
 #footer-contatos h2{
     text-align: center;
-
 }
 
 #footer-contatos hr{
@@ -257,6 +256,21 @@ header img{  /*aqui definimos o tamanho da img no header*/
 
 #footer-contatos .footer-canais .two{
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
+
+#footer-contatos .desenvolvido{
+    color: white;
+    background-color: transparent;
+}
+
+#footer-contatos .desenvolvido a:hover{
+    color: yellowgreen;
+    transition: 1s;
+}
+
+#footer-contatos .desenvolvido a{
+    color: yellow;
+    transition: 1s;
+}
+
