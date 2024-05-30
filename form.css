@@ -1,0 +1,58 @@
+body{
+    background-image: url(img/01-1920x1080.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.FichaCadastro h2{
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.line{
+    width: 30vw;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 8px black;
+    margin-top: -3vh;
+}
+
+.FichaCadastro p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.FichaCadastro{
+    margin: 15vh auto;
+    background-color: white;
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 7px 13px 22px black;
+    border-radius: 10px;
+}
+
+.FichaCadastro form{
+    margin-left: 11vw;
+}
+
+.FichaCadastro .btn-enviar{
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+.FichaCadastro .btn-enviar input{
+    font-weight: 700;
+}
+
+.FichaCadastro .btn-enviar a:hover{
+    color: white;
+    background-color: black;
+}
+
+.FichaCadastro form label{
+    font-weight: 700;
+}
