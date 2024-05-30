@@ -101,37 +101,16 @@ header img{  /*aqui definimos o tamanho da img no header*/
     transition: 1s;  /*é o tempo que será exibido ao passar o cursor*/
 }
 
-/*configurando o bloco-01, que é após o header, onde terá apenas uma img de fundo, como uma vitrine*/
-.bloco-01{
-
-
-}
-
+/*configurando o bloco-01, que é após o header, onde terá apenas um vídeo de fundo*/
     .bloco-01 #myVideo {
-         height: 65vh;
-        width: 100vw;
+        height: 50%;
+        width: 100%;
+        
       }
-
-      #myBtn {
-        width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        border: none;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
-      }
-      
-      #myBtn:hover {
-        background: #ddd;
-        color: black;
-      }
-
-}
 
 /*configurando o bloco-02 com o depoimento dos clientes*/
 .bloco-02{
-    padding: 6%;
+    padding: 5%;
     background-color: white;
 }
 
